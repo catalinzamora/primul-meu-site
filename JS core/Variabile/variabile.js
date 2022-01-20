@@ -10,4 +10,12 @@ var message = "Hello! Este ora" + hour + ":" + minutes + ":" + seconds
 // o variabila fara valoare(undefind)
 var city
 
-alert(message)
+// alert(messageRealtime)
+console.log(message)
+
+document.write('<h1>' + message +'</h1>')
+
+/*var x = 10;
+var y = x++;
+
+console.log(y)*/
