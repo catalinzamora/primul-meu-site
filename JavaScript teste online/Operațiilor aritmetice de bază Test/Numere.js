@@ -1,32 +1,31 @@
-var a = prompt("Put the first numar!")
-var b =prompt("What you want to do, + , - , * , / ")
-var c =prompt("Put the second number!")
 
+      let firstNumberValue = prompt('Introdu primul numar:');
 
+      let operator = prompt('Introdu operatorul( +, -, * sau / )');
 
-var sum = parseInt(a) + parseInt(c)
-var diference = parseInt(a) - parseInt(c)
-var multiply = parseInt(a) * parseInt(c)
-var divide = parseInt(a) / parseInt(c)
+      let secondNumberValue = prompt('Introdu al doilea numar:');
 
-if (sum) {
-    alert("Suma este:" + sum)
-    console.log(sum)
-}
+     /* var suma = parseInt(firstNumberValue) + parseInt(secondNumberValue)
+      var diferenta = parseInt(firstNumberValue) - parseInt(secondNumberValue)
+      var inmultire = parseInt(firstNumberValue) * parseInt(secondNumberValue)
+      var impartire = parseInt(firstNumberValue) / parseInt(secondNumberValue) */
+        
+       
+      var firstNumberValue = parseFloat(firstNumberValue);
 
- if(diference) {
-    alert("Diference is:" + diference)
-    console.log(diference)}
+      var secondNumberValue = parseFloat(secondNumberValue);
 
-     
- else if (multiply){
-    alert("Multiply is:" + multiply)
-    console.log(multiply)}
+    
+      if(isNaN(firstNumber) || isNaN(secondNumber) ||
+      ("" + firstNumber).length != firstNumberValue.length || ("" + secondNumber).length != secondNumberValue.length){
 
+        alert("Valoarea unuia din operanzi nu este numerica!");
 
-else if (divide){
-    alert("Divide is:" + divide)
-    console.log(divide)} 
+  }
+
+     else if(operator){
+         alert("Suma este" + sum)
+     }
 
 
 
