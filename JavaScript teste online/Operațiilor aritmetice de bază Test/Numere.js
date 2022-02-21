@@ -5,15 +5,14 @@
 
       let secondNumberValue = prompt('Introdu al doilea numar:');
 
-     /* var suma = parseInt(firstNumberValue) + parseInt(secondNumberValue)
+      var suma = parseInt(firstNumberValue) + parseInt(secondNumberValue)
       var diferenta = parseInt(firstNumberValue) - parseInt(secondNumberValue)
       var inmultire = parseInt(firstNumberValue) * parseInt(secondNumberValue)
-      var impartire = parseInt(firstNumberValue) / parseInt(secondNumberValue) */
+      var impartire = parseInt(firstNumberValue) / parseInt(secondNumberValue) 
         
-       
-      var firstNumberValue = parseFloat(firstNumberValue);
+      let firstNumber = parseFloat(firstNumberValue);
 
-      var secondNumberValue = parseFloat(secondNumberValue);
+      let secondNumber = parseFloat(secondNumberValue);
 
     
       if(isNaN(firstNumber) || isNaN(secondNumber) ||
@@ -23,9 +22,17 @@
 
   }
 
-     else if(operator){
+     else if(isNumber(firstNumber) + isNumber(secondNumber)){
          alert("Suma este" + sum)
      }
+     else if(isNumber(firstNumber) - isNumber(secondNumber)){
+      alert("Suma este" + diferenta)
+  }
+  else if(isNumber(firstNumber) * isNumber(secondNumber)){
+    alert("Suma este" + inmultire)
+}
+else (isNumber(firstNumber) / isNumber(secondNumber)) 
+  alert("Suma este" + impartire)
 
 
 
